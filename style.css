@@ -1,66 +1,67 @@
-/* General Page Styling */
+* style.css */
 body {
-    background-color: #f4f4f4; /* Match this to the main page */
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3;
     color: #333;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
-/* Main Container */
 .container {
     width: 90%;
     max-width: 800px;
-    margin: auto;
-    background: #fff; /* Match the main page */
+    margin: 0 auto;
+    background: white;
     padding: 20px;
-    border: 2px solid #000;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    border: 2px solid #999;
 }
 
-/* Marquee */
-.marquee {
-    font-size: 18px;
-    font-weight: bold;
-    color: #0066cc;
-    background: #ddd;
-    padding: 5px;
-    border-bottom: 2px solid #000;
-}
-
-/* Navigation */
 nav {
-    background: #ccc; /* Match main page */
+    background: #666;
     padding: 10px;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+    text-align: center;
 }
 
 nav a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 15px;
-}
-
-nav a:hover, .active {
-    background: #0066cc;
     color: white;
+    text-decoration: none;
+    padding: 10px 20px;
 }
 
-/* Changelog Entries */
-.changelog-entry {
-    background: #eee;
+nav a:hover {
+    background: #444;
+}
+
+h1 {
+    font-size: 24px;
+    border-bottom: 2px solid #666;
+    padding-bottom: 10px;
+}
+
+.project {
+    border: 1px solid #999;
     padding: 10px;
     margin: 10px 0;
-    border-left: 4px solid #0066cc;
 }
 
+/* Scrolling text effect */
+.marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* Responsive Design */
 @media (max-width: 600px) {
     .container {
-        width: 95%;
-    }
-    nav a {
-        display: block;
-        padding: 10px;
+        width: 100%;
     }
 }
