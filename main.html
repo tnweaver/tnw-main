@@ -3,24 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Welcome to My Retro Website</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border: 2px solid #000;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+        }
+        .marquee {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0066cc;
+            background: #ddd;
+            padding: 5px;
+            border-bottom: 2px solid #000;
+        }
+        nav {
+            background: #ccc;
+            padding: 10px;
+            border-top: 2px solid #000;
+            border-bottom: 2px solid #000;
+        }
+        nav a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 15px;
+        }
+        nav a:hover {
+            background: #0066cc;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+            nav a {
+                display: block;
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <a href="main.html">Home</a>
-        <a href="changelog.html">Changelog</a>
-        <a href="projects.html">Projects</a>
-    </div>
-
-    <!-- Content Container -->
+    <marquee class="marquee">Welcome to my website! Stay tuned for updates!</marquee>
     <div class="container">
-        <h1>Welcome to My Website!</h1>
-        <p>This site is hosted on my Ubuntu VPS using Nginx and is version-controlled with GitHub.</p>
-        <p>More content coming soon!</p>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <a href="main.html">Home</a>
+            <a href="changelog.html">Changelog</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+        <p>This website is hosted on my Ubuntu VPS and powered by free Oracle Cloud servers.</p>
+        <p>Version-controlled with GitHub and regularly updated!</p>
     </div>
-
 </body>
 </html>
