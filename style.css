@@ -15,6 +15,18 @@ body {
     color: blue;
     text-align: center;
     border-bottom: 2px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.header span {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
 }
 
 .container {
@@ -56,21 +68,6 @@ h1 {
     padding: 10px;
     margin: 10px 0;
     background: #f4f4f4;
-}
-
-/* Scrolling text effect */
-.marquee {
-    white-space: nowrap;
-    overflow: hidden;
-    display: block;
-    width: 100%;
-    font-weight: bold;
-    animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-    from { transform: translateX(100%); }
-    to { transform: translateX(-100%); }
 }
 
 /* Responsive Design */
