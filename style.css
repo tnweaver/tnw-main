@@ -1,53 +1,71 @@
-/* Retro 2000s Internet Explorer Theme */
 body {
-    background-color: #008080; /* Windows XP Teal */
-    color: #ffffff;
-    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+marquee {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0066cc;
+    background: #ddd;
+    padding: 5px;
+    border-bottom: 2px solid #000;
+}
+
+nav {
+    background: #ccc;
+    padding: 10px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
-/* Centered Container */
-.container {
-    width: 80%;
-    max-width: 900px;
-    background: #c0c0c0; /* Classic Silver Background */
-    padding: 20px;
-    margin: 20px auto;
-    border: 5px ridge #ffffff; /* XP Window Border Effect */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+nav ul li {
+    display: inline;
+    margin-right: 10px;
 }
 
-/* Navigation Bar */
-.navbar {
-    background: #000080; /* Windows XP Blue */
-    padding: 10px;
-    text-align: center;
-}
-
-.navbar a {
-    color: white;
+nav a {
+    color: #000;
     text-decoration: none;
-    padding: 8px 15px;
-    font-size: 16px;
-    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 15px;
 }
 
-.navbar a:hover {
-    background: #ffffff;
-    color: #000080;
-    border: 2px solid #000080;
+nav a:hover, .active {
+    background: #0066cc;
+    color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+.changelog-entry {
+    background: #eee;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #0066cc;
+}
+
+@media (max-width: 600px) {
     .container {
         width: 95%;
     }
-
-    .navbar a {
+    nav ul li {
         display: block;
-        margin: 5px 0;
+        margin-bottom: 5px;
     }
 }
