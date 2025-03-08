@@ -14,30 +14,45 @@
             <a href="changelog.html">Changelog</a>
             <a href="projects.html">Projects</a>
         </nav>
-        <p>This website is a personal project that is going to hold information of projects that I do within my work or homelab as well as a always on reference.</p>
+        <p>This website is a personal project that is going to hold information of projects that I do within my work or homelab as well as a always-on reference.</p>
+        
         <h2>Connect with Me</h2>
-        <ul>
-            <li><a href="www.linkedin.com/in/tnweave" target="_blank">LinkedIn</a></li>
-            <li><a href="https://steamcommunity.com/id/Red_dev" target="_blank">Steam</a></li>
-            <li>Discord: .stagnantwater <button class="copy-btn" onclick="copyDiscord()">Copy</button></li>
-            <li><a href="https://www.youtube.com/@Redd00" target="_blank">YouTube</a></li>
-            <li><a href="https://x.com/Redd00__" target="_blank">Twitter/X</a></li>
-            <li><a href="https://www.instagram.com/weavee__" target="_blank">Instagram</a></li>
-            <li><a href="https://github.com/tnweaver" target="_blank">GitHub</a></li>
-        </ul>
-        <div class="social-links">
-            <a href="www.linkedin.com/in/tnweave" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"></a>
-            <a href="https://steamcommunity.com/id/Red_dev" target="_blank"><img src="assets/steam.png" alt="Steam"></a>
-            <a href="https://www.youtube.com/@Redd00" target="_blank"><img src="assets/youtube.png" alt="YouTube"></a>
-            <a href="https://x.com/Redd00__" target="_blank"><img src="assets/x.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com/weavee__" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
-            <a href="https://github.com/tnweaver" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
-        </div>
-        <p>Discord: .stagnantwater <button class="copy-btn" onclick="copyDiscord()">Copy</button></p>
+        <table class="social-table">
+            <tr>
+                <td><a href="https://www.linkedin.com/in/tnweave" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn" class="social-icon"></a></td>
+                <td><a href="https://www.linkedin.com/in/tnweave" target="_blank">LinkedIn</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://steamcommunity.com/id/Red_dev" target="_blank"><img src="assets/steam.png" alt="Steam" class="social-icon"></a></td>
+                <td><a href="https://steamcommunity.com/id/Red_dev" target="_blank">Steam</a></td>
+            </tr>
+            <tr>
+                <td><img src="assets/discord.png" alt="Discord" class="social-icon"></td>
+                <td>Discord: .stagnantwater <button class="copy-btn" onclick="copyDiscord()">Copy</button></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.youtube.com/@Redd00" target="_blank"><img src="assets/youtube.png" alt="YouTube" class="social-icon"></a></td>
+                <td><a href="https://www.youtube.com/@Redd00" target="_blank">YouTube</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://x.com/Redd00__" target="_blank"><img src="assets/x.png" alt="Twitter/X" class="social-icon"></a></td>
+                <td><a href="https://x.com/Redd00__" target="_blank">Twitter/X</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.instagram.com/weavee__" target="_blank"><img src="assets/instagram.png" alt="Instagram" class="social-icon"></a></td>
+                <td><a href="https://www.instagram.com/weavee__" target="_blank">Instagram</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/tnweaver" target="_blank"><img src="assets/github.png" alt="GitHub" class="social-icon"></a></td>
+                <td><a href="https://github.com/tnweaver" target="_blank">GitHub</a></td>
+            </tr>
+        </table>
     </div>
+
     <script>
         function copyDiscord() {
             navigator.clipboard.writeText(".stagnantwater");
+            alert("Discord username copied!");
         }
     </script>
 </body>
