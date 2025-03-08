@@ -76,3 +76,9 @@ h1 {
         width: 100%;
     }
 }
+
+.social-icon {
+    width: 24px;  /* Adjust to your preferred size */
+    height: 24px; /* Ensures all icons are the same size */
+    vertical-align: middle;
+}
