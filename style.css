@@ -77,11 +77,3 @@ h1 {
     }
 }
 
-.social-icon {
-    width: 32px; /* Adjust as needed */
-    height: 32px;
-    object-fit: contain;
-    display: block; /* Ensures proper alignment */
-    margin: 5px auto; /* Centers icons */
-}
-
