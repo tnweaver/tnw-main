@@ -9,13 +9,14 @@ body {
 }
 
 .header {
-    background-color: #c0c0c0;
-    padding: 10px;
-    font-weight: bold;
-    color: blue;
-    text-align: center;
-    border-bottom: 2px solid black;
+    width: 100%;
+    background: gray;
+    padding: 5px 0;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     white-space: nowrap;
 }
 
@@ -24,10 +25,29 @@ body {
     animation: marquee 10s linear infinite;
 }
 
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
+    color: purple;
+    font-size: 16px;
+    animation: scrollText 10s linear infinite;
+}
+
 @keyframes marquee {
     from { transform: translateX(100%); }
     to { transform: translateX(-100%); }
 }
+
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 
 .container {
     width: 90%;
