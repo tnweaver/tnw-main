@@ -101,3 +101,9 @@ h1 {
     color: black; /* Keep the link color the same after being clicked */
 }
 
+.social-icon {
+    width: 20px;  /* Adjust size as needed */
+    height: 20px;
+    vertical-align: middle; /* Aligns image with text */
+    margin-right: 5px; /* Adds spacing between image and text */
+}
