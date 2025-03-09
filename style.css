@@ -25,29 +25,10 @@ body {
     animation: marquee 10s linear infinite;
 }
 
-.scrolling-text {
-    display: inline-block;
-    white-space: nowrap;
-    font-weight: bold;
-    color: purple;
-    font-size: 16px;
-    animation: scrollText 10s linear infinite;
-}
-
 @keyframes marquee {
     from { transform: translateX(100%); }
     to { transform: translateX(-100%); }
 }
-
-@keyframes scrollText {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
 
 .container {
     width: 90%;
