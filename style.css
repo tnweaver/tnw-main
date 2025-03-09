@@ -76,4 +76,28 @@ h1 {
         width: 100%;
     }
 }
+/* Center the social media links */
+.social-table {
+    margin: 0 auto; /* Centers the table */
+    text-align: center; /* Aligns text inside table cells */
+}
+
+.social-table td {
+    padding: 5px; /* Adds spacing between links */
+}
+
+/* Remove default blue and purple link colors */
+.social-table a {
+    color: black; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+.social-table a:hover {
+    color: gray; /* Change color when hovered */
+}
+
+.social-table a:visited {
+    color: black; /* Keep the link color the same after being clicked */
+}
 
