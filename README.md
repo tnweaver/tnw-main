@@ -16,6 +16,9 @@ You can find more information on the install of Nginx here: https://nginx.org/en
 
 Lastly I use Github and a CRON task to pull the latest repo from github.
 
+
+All of my code for this will be available and free for anyone to use. I plan to update this website with any of my local documentation and anything that I find useful within my professional work and homelab use case. 
+
 ## Process of Creation!
 ## Warning!!!! 
 I am not a developer or a professional code slinger, this is just a hobby using things I learned from school/hobby.
