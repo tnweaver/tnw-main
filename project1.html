@@ -41,20 +41,10 @@
         <p><h2>Step 4</h2></p>
         <p>Login to IDRAC and it will want you to upload a license</p>
         <p>
-            Go ahead and <a href="#" onclick="downloadFile()">download the License.xml</a> or use the following code and save it to a file.xml and upload it as a license.
+            Go ahead and <a href="view-license.html">view the License.xml</a> or use the following code and save it to a file.xml and upload it as a license.
         </p>
         <p><h2>You should now have IDRAC 7 Enterprise!</h2></p>
-        
-        <script>
-            function downloadFile() {
-                const link = document.createElement('a');
-                link.href = 'assets/Project1/license.xml'; // Path to the file
-                link.download = 'license.xml'; // File name for download
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            }
-        </script>
+
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const copyButtons = document.querySelectorAll('.copy-btn');

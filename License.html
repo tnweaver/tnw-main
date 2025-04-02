@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View License</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        pre {
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .copy-btn {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .copy-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>License.xml</h1>
+        <p>Below is the content of the license file. You can copy it using the button below:</p>
+        <pre id="license-content">
+<?xml version="1.0"?>
+<!--Copyright (c) 2010-2011 Dell Inc. All Rights Reserved.-->
+<lns:LicenseClass xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lns="http://www.dell.com/2011/12G/licensing">
+  <lns:LicenseData>
+    <lns:Schema lns:Vendor="Dell" lns:ID="iDRAC" lns:maxDepth="255" lns:SchemaVersion="2.0"/>
+    <lns:TransferableLicense>true</lns:TransferableLicense>
+    <lns:UTCdateSold>2013-07-30T03:04:11Z</lns:UTCdateSold>
+    <lns:EntitlementID>DE00000009660549</lns:EntitlementID>
+    <lns:DeviceClass lns:ID="iDRAC"/>
+    <lns:ProductDescription>
+    </lns:ProductDescription>
+    <lns:LicenseTerm>
+    </lns:LicenseTerm>
+    <lns:Restrictions>
+    </lns:Restrictions>
+    <lns:DeviceInfo lns:ID="1" lns:VendorID="0x1912" lns:DeviceID="0x0011"/>
+    <lns:Feature lns:ID="1" lns:Description="License Management" lns:Enabled="true"/>
+  </lns:LicenseData>
+</lns:LicenseClass>
+        </pre>
+        <button class="copy-btn" onclick="copyLicense()">Copy to Clipboard</button>
+    </div>
+
+    <script>
+        function copyLicense() {
+            const licenseContent = document.getElementById('license-content').textContent;
+            navigator.clipboard.writeText(licenseContent).then(() => {
+                alert('License content copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
