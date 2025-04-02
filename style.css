@@ -108,3 +108,26 @@ h1 {
     vertical-align: middle; /* Aligns image with text */
     margin-right: 5px; /* Adds spacing between image and text */
 }
+.code-block {
+    display: inline-block;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: monospace;
+    position: relative;
+}
+
+.code-block button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.code-block button:hover {
+    background: #0056b3;
+}
