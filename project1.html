@@ -25,27 +25,36 @@
         <P><h2>Step 2</h2></P>
         <p>Using the ISO create a bootable drive and load into the operating system (This is a live ISO so you only need to boot to the live desktop and open the terminal)</p>
         <p>Enter these commands:</p>
-        <div class="code-block">
+        <p><div class="code-block">
             <pre><code>sudo su</code></pre>
             <button class="copy-btn" data-code="sudo su">Copy</button>
-        </div>
-        <div class="code-block">
+        </div></p>
+        <p><div class="code-block">
             <pre><code>smbios-sys-info --service-tag --set=9QYZF42</code></pre>
             <button class="copy-btn" data-code="smbios-sys-info --service-tag --set=9QYZF42">Copy</button>
-        </div>
-        <div class="code-block">
+        </div></p>
+        <p><div class="code-block">
             <pre><code>reboot now</code></pre>
             <button class="copy-btn" data-code="reboot now">Copy</button>
-        </div>
+        </div></p>
         <p>When the system reboot it may come up with an license error or an upgrading screen but just let the system update and start IDRAC.</p>
         <p><h2>Step 4</h2></p>
         <p>Login to IDRAC and it will want you to upload a license</p>
         <p>
-            Go ahead and <a href="assets/Project1/license.xml" download>download the License.xml</a> or use the following code and save it to a file.xml and upload it as a license.
+            Go ahead and <a href="#" onclick="downloadFile()">download the License.xml</a> or use the following code and save it to a file.xml and upload it as a license.
         </p>
         <p><h2>You should now have IDRAC 7 Enterprise!</h2></p>
         
-        
+        <script>
+            function downloadFile() {
+                const link = document.createElement('a');
+                link.href = 'assets/Project1/license.xml'; // Path to the file
+                link.download = 'license.xml'; // File name for download
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }
+        </script>
         <script>
             document.addEventListener('DOMContentLoaded', () => {
                 const copyButtons = document.querySelectorAll('.copy-btn');
