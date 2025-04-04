@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Homelab Overview</title>
+    <style>
+        p {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Homelab Overview</h1>
+        <nav>
+            <a href="main.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="changelog.html">Changelog</a>
+            <a href="projects.html">Projects</a>
+        </nav>
+        <p>This Project is just an overview of my homelab hardware and services that I currently have running (will be edited frequently as I am trying to consolidate most of my services to less systems)</p>
+        <p><h2>Hardware</h2></p>
+        <ul>
+            <li>Dell PowerEdge R420 (IDRAC 7 Enterprise)</li>
+            <li>Dell PowerEdge R730 (IDRAC 8 Express)</li>
+            <li>HP Proliant 360p Gen 8 (ILO 7)</li>
+            <li>Custom Threadripper 2950x server</li>
+            <li>Raspberry Pi 5 4gb</li>
+            <li>Raspberry Pi 5 8Gb</li>
+            <li>Unifi Dream Machine Pro (10gb fiber internet connection)</li>
+            <li>2 Unifi Aggergation Switch (Connections to all server 10gb)</li>
+            <li>Unifi 24 port switch (Connections to all ILO interfaces and non 10gb devices)</li>
+        </ul>
+        <p><h2>Services</h2></p>
+        <ul>
+            <li>Proxmox VE (Hypervisor on all servers)</li>
+            <li>TrueNAS Scale for storage and some applications (arr suite and media streaming)</li>
+            <li>Pi-Hole for DNS ad blocking and local DNS entries</li>
+            <li>Dockage for running all of the docker containers(Nginx website, Nginx Proxy Manager, Nebula-Sync for Pi-Hole)</li>
+            <li>VaultWarden</li>
+            <li>Uptime Kuma</li>
+            <li>Windows Server 2019 (Hosting local AX2012 Dev Environment)</li>
+            <li>Windows Server 2025 (Domain Controller and Windows dev test environment)</li>
+        </ul>    
+    </div>
+</body>
+</html>
